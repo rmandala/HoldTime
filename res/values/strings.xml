@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HoldTime</string>
+    <string name="heading">Game is in play!!!</string>
+    <string name="team1">Brazil-&gt;USA</string>
+    <string name="team2">USA-&gt;Brazil</string>
+</resources>

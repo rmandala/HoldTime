@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/team1Timer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/heading"
+        android:textAlignment="center" />
+    
+    <TextView
+        android:id="@+id/team2Timer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="@string/heading"
+        android:textAlignment="center" />
+    
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="125dp"
+        android:minWidth="164dip"
+        android:textOff="@+string/team2"
+        android:textOn="@+string/team1" 
+        android:onClick="onToggleClicked"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toggleButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp" >
+
+		<Button
+		    android:id="@+id/team1button"
+		    android:layout_width="160dp"
+		    android:layout_height="wrap_content"
+		    android:text="USA" 
+		    android:onClick="changeTeam"/>
+
+	    <Button
+	        android:id="@+id/team2button"
+	        android:layout_width="160dp"
+	        android:layout_height="wrap_content"
+	        android:text="Brazil"
+	        android:onClick="changeTeam" />
+    </LinearLayout>
+
+</RelativeLayout>
